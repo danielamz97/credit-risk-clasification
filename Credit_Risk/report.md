@@ -11,14 +11,21 @@ We utilized logistic regression models to make predictions on both the original 
 ## Results
 
 ### Logistic Regression Model with Original Data:
-- Balanced Accuracy Score: 0.9697
-- Confusion Matrix:
-  ```
+- **Performance Metrics:**
+  - Accuracy Score: 0.99
+  - Precision Score:
+    - Class 0: 1.00
+    - Class 1: 0.85
+  - Recall Score:
+    - Class 0: 0.99
+    - Class 1: 0.95
+- **Confusion Matrix:**
+  
   [[18658   107]
    [   34   585]]
-  ```
-- Classification Report:
-  ```
+  
+- **Classification Report:**
+  
                  precision    recall  f1-score   support
 
            0       1.00      0.99      1.00     18765
@@ -27,17 +34,24 @@ We utilized logistic regression models to make predictions on both the original 
     accuracy                           0.99     19384
    macro avg       0.92      0.97      0.94     19384
 weighted avg       0.99      0.99      0.99     19384
-  ```
+
 
 ### Logistic Regression Model with Resampled Data:
-- Balanced Accuracy Score: 0.9936
-- Confusion Matrix:
-  ```
+- **Performance Metrics:**
+  - Balanced Accuracy Score: 0.9936
+  - Precision Score:
+    - Class 0: 1.00
+    - Class 1: 0.84
+  - Recall Score:
+    - Class 0: 0.99
+    - Class 1: 0.99
+- **Confusion Matrix:**
+  
   [[18646   119]
    [    4   615]]
-  ```
-- Classification Report:
-  ```
+  
+- **Classification Report:**
+  
                  precision    recall  f1-score   support
 
            0       1.00      0.99      1.00     18765
@@ -46,7 +60,7 @@ weighted avg       0.99      0.99      0.99     19384
     accuracy                           0.99     19384
    macro avg       0.92      0.99      0.95     19384
 weighted avg       0.99      0.99      0.99     19384
-  ```
+
 
 ## Summary
 
